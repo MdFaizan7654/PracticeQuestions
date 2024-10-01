@@ -89,6 +89,28 @@ namespace PracticeQuestions
             //Console.ReadLine();
             #endregion Check if the given Number is Palindrome or Not
 
+            #region Check if the given String is Palindrome or Not
+
+            //Console.WriteLine("Please enter any string...");
+            //string name = Console.ReadLine();
+            //string reverse = string.Empty;
+
+            //for (int i = name.Length-1; i >= 0 ; i--)
+            //{
+            //    reverse += name[i];
+
+            //    if(name == reverse)
+            //    {
+            //        Console.WriteLine("String is Palindrome");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("String is not Palindrome");
+            //    }
+            //}
+            //Console.ReadLine();
+            #endregion Check if the given String is Palindrome or Not
+
             #region Check if the given Number is Armstrong or Not
             //Console.WriteLine("Please Enter your Name = ");
             //int num = int.Parse(Console.ReadLine());
@@ -223,13 +245,136 @@ namespace PracticeQuestions
             //Console.ReadLine();
             #endregion Find a Factorial of a Number
 
+            #region Swap Two Numbers
+            //int num1, num2, result;
+            //Console.Write("Please Enter your first Number = ");
+            //num1 = int.Parse(Console.ReadLine());
+
+            //Console.Write("Please Enter your first Number = ");
+            //num2 = int.Parse(Console.ReadLine());
+
+            //result = num1;
+            //num1 = num2;
+            //num2 = result;
+
+            //Console.WriteLine("After Swaping the number...");
+            //Console.WriteLine();
+            //Console.WriteLine($"First number: {num1}");
+            //Console.WriteLine($"Second number: {num2}");
+            //Console.ReadLine();
+            #endregion Swap Two Numbers
+
+            #region Print on screen the output of adding, subtracting, multiplying and dividing two numbers entered by the user
+            //int num1, num2, result1, result2, result3, result4, result5;
+
+            //Console.Write("Please Enter your first Number = ");
+            //num1 = int.Parse(Console.ReadLine());
+
+            //Console.Write("Please Enter your first Number = ");
+            //num2 = int.Parse(Console.ReadLine());
+
+            //result1 = num1 + num2;
+            //result2 = num1 - num2;
+            //result3 = num1 * num2;
+            //result4 = num1 / num2;
+            //result5 = num1 % num2;
+
+            //Console.WriteLine("{0} + {1} = {2} ", num1, num2, result1);
+            //Console.WriteLine("{0} - {1} = {2} ", num1, num2, result2);
+            //Console.WriteLine("{0} x {1} = {2} ", num1, num2, result3);
+            //Console.WriteLine("{0} / {1} = {2} ", num1, num2, result4);
+            //Console.WriteLine("{0} mod {1} = {2} ", num1, num2, result5);
+            //Console.ReadLine();
+            #endregion Print on screen the output of adding, subtracting, multiplying and dividing two numbers entered by the user
+
+            #region Max and Min Number in Array
+
+            //int[] number = { 10, 20, 30, 100, 70, 4, 80, 99, 88,110 };
+
+            //int max = number[0];
+            //int min = number[0];
+            //int i;
+
+            //for (i = 1; i <= number.Length-1; i++)
+            //{ 
+            //    if (number[i] > max)
+            //    {
+            //        max = number[i];
+            //    }
+            //    if (number[i] < min)
+            //    {
+            //        min = number[i];
+            //    }
+            //}
+            //Console.WriteLine(max);
+            //Console.WriteLine(min);
+            //Console.ReadLine();
+
+            #endregion Max and Min Number in Array
+
+            #region Find third largest Number in an array
+
+            //int[] arr = { 1, 8, 4, 5, 12, 2, 5, 6, 7, 1, 90, 100, 56, 8, 34 };
+            //int f = arr[0];
+            //int s = arr[0];
+            //int t = arr[0];
+
+            //foreach (int i in arr)
+            //{
+            //    if (i > f)
+            //    {
+            //        t = s;
+            //        s = f;
+            //        f = i;
+            //    }
+            //    if (i > s && i != f)
+            //    {
+            //        t = s;
+            //        s = i;
+            //    }
+            //    if (i > t && i != s && i != f)
+            //    {
+            //        t = i;
+            //    }
+            //}
+            //Console.WriteLine($"First highest: {f}, Second highest: {s}, Third highest: {t}");
+            //Console.ReadLine();
+            #endregion Find third largest Number in an array
+
             #region Find a Fibonacci of a Number
+
+            int n1 = 0 ,n2 = 1 ;
+            int n3, i, length;
+
+            Console.Write("Enter the number of elements to Print : ");
+            length = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+            if(length < 2)
+            {
+                Console.WriteLine("Please enter a number greater than 2 ");
+            }
+            else
+            {
+                Console.Write(n1 + " " + n2 + "");
+                for (i = 2; i < length; i++)
+                {
+                    n3 = n1 + n2;
+                    Console.Write(" " + n3);
+                    n1 = n2;
+                    n2 = n3;
+                }
+            }
             
+            Console.ReadLine();
             #endregion Find a Fibonacci of a Number
 
             #region Find GCD of Two Numbers
 
             #endregion Find GCD of Two Numbers
+
+            
+
+            Console.ReadLine();
         }
     }
 }
