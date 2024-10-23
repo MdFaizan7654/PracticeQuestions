@@ -343,8 +343,8 @@ namespace PracticeQuestions
 
             #region Find a Fibonacci of a Number
 
-            int n1 = 0 ,n2 = 1 ;
-            int n3, i, length;
+            int FN = 0 ,SN = 1 ;
+            int TN, i, length;
 
             Console.Write("Enter the number of elements to Print : ");
             length = int.Parse(Console.ReadLine());
@@ -355,13 +355,13 @@ namespace PracticeQuestions
             }
             else
             {
-                Console.Write(n1 + " " + n2 + "");
+                Console.Write(FN + " " + SN + "");
                 for (i = 2; i < length; i++)
                 {
-                    n3 = n1 + n2;
-                    Console.Write(" " + n3);
-                    n1 = n2;
-                    n2 = n3;
+                    TN = FN + SN;
+                    Console.Write(" " + TN);
+                    FN = SN;
+                    SN = TN;
                 }
             }
             
